@@ -1,0 +1,8 @@
+/* Поместите мяч в центр поля (CSS) */
+#ball {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
