@@ -1,0 +1,77 @@
+<!-- формы -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="# method="get">
+    <div>
+        <p>Имя</p>
+        <input tabindex="1" name="username" type="text">
+    </div>
+    <div>
+        <p>Пароль</p>
+        <input tabindex="2" name="userpass" type="password">
+    </div>
+
+    <div>
+        <p>Телефон</p>
+        <input tabindex="3" name="userphone" type="tel">
+    </div>
+    
+    <div>
+        <p>Пол</p>
+        <span><input checked tabindex="4" name="gender" value="male" type="radio">Мужской</span><br>
+        <span><input tabindex="4" name="gender" value="female" type="radio">Женский</span>
+    </div>
+
+    <div>
+        <p>Имущество</p>
+        <div>
+            <input tabindex="5" name="things" value="stone" type="checkbox">Камень
+        </div>
+        <div>
+            <input tabindex="6" name="things" value="grass" type="checkbox">Трава
+        </div>
+        <div>
+            <input disabled tabindex="7" name="things" value="fence" type="checkbox">Забор
+        </div>
+    </div>
+
+    <div>
+        <p>Дополнительная информация</p>
+        <textarea tabindex="8" name="text"></textarea>
+    </div>
+
+    <div>
+        <p>прикрепить фото</p>
+        <input tabindex="9" type="file">
+    </div>
+
+    <div>
+        <p>любимый цвет</p>
+        <select tabindex="10" name="color" id="">
+            <option value="red">красный</option>
+            <option value="green">зеленый</option>
+            <option selected value="blue">голубой</option>
+        </select>
+    </div>
+
+    <div>
+        <p>прикрепить фото</p>
+        <input tabindex="11" type="file">
+    </div>
+
+    <div>
+        <p>Действия</p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </div>
+
+    </form>
+</body>
+</html>
