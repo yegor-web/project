@@ -40,7 +40,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     color: white;
 }
 
-.middle div{
+.second-middle div{
     justify-content: space-around;
     flex-wrap: wrap;
 }
