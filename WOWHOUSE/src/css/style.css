@@ -1,0 +1,19 @@
+* {
+    width: 940px;
+}
+
+.book-title__second {
+    text-align: center;
+}
+
+.book-title__first {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
