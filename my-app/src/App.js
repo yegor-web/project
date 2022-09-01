@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, {useState} from 'react'
+import '../src/styles/app.css'
+import PostItem from './components/PostItem';
 function App() {
+  const [posts, setPoints] = useState([
+    {id : 1, title : 'JS', body: 'Description'},
+    {id : 2, title : 'JS-2', body: 'Description'},
+    {id : 3, title : 'JS-3', body: 'Description'},
+    {id : 4, title : 'JS-4', body: 'Description'},
+    {id : 5, title : 'JS-5', body: 'Description'},
+  ]
+  )
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style = {{textAlign: 'center'}}>Список постов</h1>
+      {posts.map(post=> <PostItem post={post} key = {post.id}/>)}
     </div>
   );
 }
